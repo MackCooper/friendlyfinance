@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Friendly Finance</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery-csv/src/jquery.csv.js"></script>
+<script type="text/javascript">
+	function createCORSRequest(method, url){
+	    var xhr = new XMLHttpRequest();
+	    if ("withCredentials" in xhr){
+		// XHR has 'withCredentials' property only if it supports CORS
+		xhr.open(method, url, true);
+	    } else if (typeof XDomainRequest != "undefined"){ // if IE use XDR
+		xhr = new XDomainRequest();
+		xhr.open(method, url);
+	    } else {
+		xhr = null;
+	    }
+	    return xhr;
+	}
+
+	$(document).ready(function() {
+		
+
+		//$("#Title").hide(
+
+		//$.ajax({
+		    //url : "https://docs.google.com/spreadsheets/d/e/2PACX-1vTCnBK857_baYm8zZLfhTPiu3j9JK-RxgkqGsJBX6RkW52qgvMMoEaKRXZAYfl99LzHUA2SwZqWR3PV/pub?output=csv",
+		    //success : console.log($.csv.toArrays("data.csv"))
+		//});
+	});
+
+</script>
+</head>
+<body>
+    <h1 id="Title">Friendly Finance</h1>
+
+</body>
+</html>
