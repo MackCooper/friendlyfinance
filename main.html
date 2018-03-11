@@ -21,35 +21,40 @@
 </head>
 
 <body>
-    <!--    /////////////////////////////////////////////////////////////   -->
-    <div class="dropdown">
-        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Notifications
-            <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-            <li>
-                <a href="#">HTML</a>
-            </li>
-            <li>
-                <a href="#">CSS</a>
-            </li>
-            <li>
-                <a href="#">JavaScript</a>
-            </li>
-        </ul>
-    </div>
 
-    <!--    /////////////////////////////////////////////////////////////   -->
     <center>
         <h1 id="title">Loan Shark</h1>
         <br>
-        <div class="container top_bar">
+        <div class="container">
             <div class="row">
                 <div class="col-4">
                     <h3>Current Transactions: </h3>
                 </div>
                 <div class="col-4">
-                    <button type="button" class="btn btn-primary">New Loan</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModa;">New Loan
+
+                    </button>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div classs="modal-header">
+                                    <h4 class="modal-title"> Creating New Loan: </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;
+
+                                    </button>
+                                </div>
+                                <div class = "modal-body">
+                                    <!-- Creates the inputs for Loan (See Balsamiq) -->
+                                </div>
+
+                                <div class = "modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close
+                                        
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4">
                     <button type="button" class="btn btn-info">Edit Transaction</button>
