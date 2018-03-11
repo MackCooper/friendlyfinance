@@ -5,7 +5,7 @@ const rawData = [
         person: 'Oliver',
         description: 'Burger from Caps',
         cost: 12,
-        currency: 'CAD' 
+        currency: 'CAD'
     }, {
         month: "February",
         date: 19,
@@ -44,8 +44,15 @@ function showData() {
         </div>
         <div class="col-4">
             <h1 id="cost"> +$${data[i].cost} ${data[i].currency} </h1>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-9">
+              <button type="button" class="btn btn-info">Edit</button>
+              </div>
+            </div>
         </div>
-        </div>`);
+        </div>
+	<hr>`);
     }
 }
 
