@@ -14,10 +14,14 @@
 </style>
 
 <head>
+    <title>Loan Shark</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Loan Shark</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -31,26 +35,30 @@
                     <h3>Current Transactions: </h3>
                 </div>
                 <div class="col-4">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModa;">New Loan
+                    <div class="container">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModa;">
+                            New Loan
+                        </button>
 
-                    </button>
-                    <div class="modal fade" id="myModal">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div classs="modal-header">
-                                    <h4 class="modal-title"> Creating New Loan: </h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
 
-                                    </button>
-                                </div>
-                                <div class = "modal-body">
-                                    <!-- Creates the inputs for Loan (See Balsamiq) -->
-                                </div>
+                                    <div classs="modal-header">
+                                        <h4 class="modal-title"> Creating New Loan: </h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
 
-                                <div class = "modal-footer">
-                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close
-                                        
-                                    </button>
+                                    <div class="modal-body">
+                                        <!-- Creates the inputs for Loan (See Balsamiq) -->
+                                        Placeholder...
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
