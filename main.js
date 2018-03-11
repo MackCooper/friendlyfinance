@@ -1,18 +1,21 @@
 const rawData = [
     {
-        date: new Date(),
+        month: "March",
+        date: 10,
         person: 'Oliver',
         description: 'Burger from Caps',
         cost: 12,
         currency: 'CAD' 
     }, {
-        date: new Date(),
+        month: "February",
+        date: 19,
         person: 'Matt',
         description: 'T-Shirt bought in States',
         cost: 30,
         currency: 'USD'
     }, {
-        date: new Date(),
+        month: "December",
+        date: 23,
         person: 'Victor',
         description: 'Icecream Sandwich',
         cost: 3,
@@ -32,15 +35,15 @@ function showData() {
         console.log(data[i]);
         table.insertAdjacentHTML('beforeend',`<div class="row">
         <div class="col-4">
-            <h4 id="month"> March </h4>
-            <h2 id="day"> 10 </h2>
+            <h4 id="month"> ${data[i].month} </h4>
+            <h2 id="day"> ${data[i].date} </h2>
         </div>
         <div class="col-4">
             <h2 id="other_user"> ${data[i].person} </h2>
-            <h5 id="transaction_details"> Burger from Caps </h5>
+            <h5 id="transaction_details"> ${data[i].description} </h5>
         </div>
         <div class="col-4">
-            <h1 id="cost"> +$12 CAD </h1>
+            <h1 id="cost"> +$${data[i].cost} ${data[i].currency} </h1>
         </div>
         </div>`);
     }
