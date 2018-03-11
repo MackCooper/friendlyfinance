@@ -34,11 +34,11 @@ function showData() {
     for (let i=0; i < data.length; i++ ) {
         console.log(data[i]);
         table.insertAdjacentHTML('beforeend',`<div class="row">
-        <div class="col-4">
+        <div class="col-2">
             <h4 id="month"> ${data[i].month} </h4>
             <h2 id="day"> ${data[i].date} </h2>
         </div>
-        <div class="col-4">
+        <div class="col-6">
             <h2 id="other_user"> ${data[i].person} </h2>
             <h5 id="transaction_details"> ${data[i].description} </h5>
         </div>
