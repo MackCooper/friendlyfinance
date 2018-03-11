@@ -1,59 +1,69 @@
 <!DOCTYPE html>
-<html lang = "en" >
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
 <style>
-/*              Insert Custom CSS Here          */
-.data_block {
-    background-color:  #f0f0f5;
-    width: 80%;
-}
+    /*              Insert Custom CSS Here          */
+
+    .data_block {
+        background-color: #f0f0f5;
+        width: 80%;
+    }
+
+    .dropdown {}
 </style>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<title>Loan Shark</title>
+    <title>Loan Shark</title>
 
 </head>
 
 <body>
+    <!--    /////////////////////////////////////////////////////////////   -->
+    <div class="dropdown">
+        <button class="btn btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Notifications
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li>
+                <a href="#">HTML</a>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+            </li>
+            <li>
+                <a href="#">JavaScript</a>
+            </li>
+        </ul>
+    </div>
 
-
-
-<center>
-    <h1 id="title">Loan Shark</h1>
-    <br>
-    <div class = "container top_bar">
-        <div class = "row">
-            <div class = "col-4">
-                <h3>Currrent Transactions: </h3>
-            </div>
-            <div class = "col-4">
-                <button type="button" class="btn btn-primary">New Loan</button>
-            </div>
-            <div class = "col-4">
-                <button type="button" class="btn btn-info">Edit Transaction</button>
+    <!--    /////////////////////////////////////////////////////////////   -->
+    <center>
+        <h1 id="title">Loan Shark</h1>
+        <br>
+        <div class="container top_bar">
+            <div class="row">
+                <div class="col-4">
+                    <h3>Current Transactions: </h3>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-primary">New Loan</button>
+                </div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-info">Edit Transaction</button>
+                </div>
             </div>
         </div>
-    </div>
-    <br>
-    <div class = "container data_block"> 
-            <div class = "row">
-                <div class = "col-4">
-                    <h4 id = "month"> March </h4>
-                    <h2 id = "day"> 10 </h2>
-                </div>
-            <div class = "col-4">
-                <h2 id = "other_user"> Oliver </h2> 
-                <h5 id = "transaction_details"> Burger from Caps </h5>
-            </div>
-            <div class = "col-4">
-                <h1 id = "cost"> +$12 </h1>
-            </div>
-        </div>     
-    </div>
-        
-</center>
+        <br>
+        <div id="table" class="container data_block">
+          
+        </div>
 
-<script type ="text/javascript" src = "test.js"></script>
+    </center>
+
+    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
